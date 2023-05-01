@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantsVsZombies", "PlantsVsZombies\PlantsVsZombies.csproj", "{C5FDCAE0-46D0-4C53-A752-1183A67B7AED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantsVsZombies.Domain", "PlantsVsZombies.Domain\PlantsVsZombies.Domain.csproj", "{6D20EA90-79E1-4BAD-9249-44BC67127759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantsVsZombies.Domain.Test", "PlantsVsZombies.Domain.Test\PlantsVsZombies.Domain.Test.csproj", "{8D32B0ED-F5A8-49F1-893D-11445659C5E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C5FDCAE0-46D0-4C53-A752-1183A67B7AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5FDCAE0-46D0-4C53-A752-1183A67B7AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5FDCAE0-46D0-4C53-A752-1183A67B7AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5FDCAE0-46D0-4C53-A752-1183A67B7AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D20EA90-79E1-4BAD-9249-44BC67127759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D20EA90-79E1-4BAD-9249-44BC67127759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D20EA90-79E1-4BAD-9249-44BC67127759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D20EA90-79E1-4BAD-9249-44BC67127759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D32B0ED-F5A8-49F1-893D-11445659C5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D32B0ED-F5A8-49F1-893D-11445659C5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D32B0ED-F5A8-49F1-893D-11445659C5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D32B0ED-F5A8-49F1-893D-11445659C5E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
