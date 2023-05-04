@@ -7,7 +7,6 @@
             SunNum = 2;
         }
 
-        public int StoredSunNum { get; }
         public int SunNum { get; private set; }
 
         public void GenerateSun()

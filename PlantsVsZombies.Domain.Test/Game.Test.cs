@@ -53,11 +53,13 @@ namespace PlantsVsZombies.Domain.Test
 
             //Act
             sut.CreateDayGame(groundType:GroundType.Grass);
-            sut.AdvanceTurn();
+            sut.DayGame.GenerateSun();
 
             //Assert
             Assert.InRange(sut.DayGame.SunNum, 2, 5);
 ;
         }
+
+
     }
 }
