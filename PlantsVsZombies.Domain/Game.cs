@@ -9,12 +9,7 @@ namespace PlantsVsZombies.Domain
 
         public int Turn { get; }
         public GroundType GroundType { get; }
-
-        public Cell[,] Cells()
-        {
-            return cells;
-        }
-
+        public Cell[,] Cells { get => cells;}
 
         internal Game(GroundType groundType)
         {

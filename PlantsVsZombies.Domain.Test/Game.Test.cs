@@ -17,7 +17,7 @@ namespace PlantsVsZombies.Domain.Test
 
 
             //Assert
-            foreach (var cell in sut.DayGame.Cells())
+            foreach (var cell in sut.DayGame.Cells)
             {
                 Assert.Equal(GroundType.Grass, cell.GroundType);
             }
@@ -38,9 +38,9 @@ namespace PlantsVsZombies.Domain.Test
                 for (int j = 0; j < 19; j++)
                 {
                     if (i == 2 || i == 3)
-                        Assert.Equal(GroundType.Water, sut.DayGame.Cells()[i, j].GroundType);
+                        Assert.Equal(GroundType.Water, sut.DayGame.Cells[i, j].GroundType);
                     else
-                        Assert.Equal(GroundType.Grass, sut.DayGame.Cells()[i, j].GroundType);
+                        Assert.Equal(GroundType.Grass, sut.DayGame.Cells[i, j].GroundType);
                 }
             }
         }
