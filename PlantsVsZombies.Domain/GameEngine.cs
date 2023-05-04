@@ -5,22 +5,19 @@ namespace PlantsVsZombies.Domain
     public class GameEngine
     {
 
-        private readonly List<Game> games;
-        public IEnumerable<Game> Games => games;
-
-        public GameEngine() { 
-            games = new List<Game>();
-        }
+        public DayGame DayGame { get; private set; }
 
         public void CreateDayGame(GroundType groundType)
         {
-
-            games.Add(new DayGame(groundType));
+            DayGame = new DayGame(groundType);
 
         }
 
-    };
+        public void AdvanceTurn()
+        {
+            DayGame.GenerateSun();
+        }
+    }
 
-       
 
 }
