@@ -1,9 +1,9 @@
-﻿namespace PlantsVsZombies.Domain
+﻿namespace PlantsVsZombies.Domain.Creature
 {
-    internal class Creature
+    internal abstract class Creature
     {
         internal long id;
-        internal String nameOfCreature;
+        internal string nameOfCreature;
 
         internal int Row { get; }
         internal int Col { get; }
@@ -12,21 +12,26 @@
         internal long Cost { get; private set; }
         internal GroundType Habitant { get; private set; }
 
-        public Creature(long id, String nameOfCreature, int Row, int Col, long Health, long Speed, long Cost, GroundType Habitant)
+        public Creature(long id, string nameOfCreature, int row, int col, long health, long speed, long cost, GroundType habitant)
         {
             this.id = id;
             this.nameOfCreature = nameOfCreature;
-            this.Row = Row;
-            this.Col = Col;
-            this.Health = Health;
-            this.Speed = Speed;
-            this.Cost = Cost;
-            this.Habitant = Habitant;
+            Row = row;
+            Col = col;
+            Health = health;
+            Speed = speed;
+            Cost = cost;
+            Habitant = habitant;
         }
 
         public void reduceHeath(int amountToReduce)
         {
             Health -= amountToReduce;
+        }
+
+        public void setHealthToZero()
+        {
+            Health = 0;
         }
     }
 }
